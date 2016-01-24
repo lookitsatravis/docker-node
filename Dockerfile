@@ -13,9 +13,7 @@ ENV NODE_VERSION 5.5.0
 RUN apt-get -qq update && \
     apt-get -qqy upgrade; \
     apt-get -qqy install \
-      build-essential \
       software-properties-common \
-      python-software-properties \
       openssl \
       ca-certificates \
       git-core \
@@ -32,7 +30,6 @@ RUN apt-get -qq update && \
       libxslt-dev \
       libxml2-dev \
       libffi-dev \
-      openjdk-7-jre-headless; \
     apt-get clean -y; \
     apt-get autoremove -y
 
