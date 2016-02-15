@@ -1,7 +1,6 @@
 FROM lookitsatravis/docker-base:1.0.0
 MAINTAINER Travis Vignon <travis@lookitsatravis.com>
 
-ENV NODE_VERSION 5.5.0
 # Python 2.7
 # Necessary because https://github.com/nodejs/node-gyp needs Python to build native extensions.
 
@@ -48,6 +47,7 @@ RUN set -ex \
 # install "virtualenv", since the vast majority of users of this image will want it
 RUN pip install --no-cache-dir virtualenv
 
+ENV NODE_VERSION 5.6.0
 
 # Node/NPM
 # gpg keys listed at https://github.com/nodejs/node
