@@ -1,4 +1,4 @@
-FROM lookitsatravis/docker-base:1.0.0
+FROM lookitsatravis/docker-base:1.0.2
 MAINTAINER Travis Vignon <travis@lookitsatravis.com>
 
 # Python 2.7
@@ -47,7 +47,7 @@ RUN set -ex \
 # install "virtualenv", since the vast majority of users of this image will want it
 RUN pip install --no-cache-dir virtualenv
 
-ENV NODE_VERSION 5.6.0
+ENV NODE_VERSION 6.3.0
 
 # Node/NPM
 # gpg keys listed at https://github.com/nodejs/node
