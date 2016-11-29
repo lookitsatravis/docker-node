@@ -47,7 +47,7 @@ RUN set -ex \
 # install "virtualenv", since the vast majority of users of this image will want it
 RUN pip install --no-cache-dir virtualenv
 
-ENV NODE_VERSION 6.3.0
+ENV NODE_VERSION 6.9.1
 
 # Node/NPM
 # gpg keys listed at https://github.com/nodejs/node

@@ -1,6 +1,6 @@
 # Node
 
-Docker image to run Node. Defaults to 5.5.0 using the $NODE_VERSION env variable.
+Docker image to run Node. Defaults to 6.9.1 (LTS) using the $NODE_VERSION env variable.
 
 Installs some common system dependencies for NPM packages.
 
@@ -14,13 +14,13 @@ The image builds Node using an ONBUILD command so the actual install of Node is 
 
 In your Dockerfile reference the prebuilt image as the base
 
-		FROM lookitsatravis/node:5.5.0
+		FROM lookitsatravis/node:6.9.1
 
 ### To build the image
 
 		$ git clone https://github.com/lookitsatravis/docker-node.git
 		$ cd docker-node
-		$ docker build -t node:5.5.0 .
+		$ docker build -t node:6.9.1 .
 
 ## License
 
